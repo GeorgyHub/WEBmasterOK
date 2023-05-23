@@ -18,134 +18,120 @@ a{
 }
 
 /*header*/
-header{
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
+.container{
+    max-width: 1180px;
+    margin: 0px auto;
+    padding: 0px 10px;
 }
-header:before{
-    content: '';
+header{
     position: absolute;
+    width: 100%;
+    height: 80px;
     top: 0;
     left: 0;
+    z-index: 5;
+    background-color: grey;
+}
+.header__body{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.img__logo{
+    display: block;
+    height: 70px;
+}
+.header__menu{}
+
+.header__menu__list{
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+.header__menu__list li{
+    list-style: none;
+    margin: 0px 0px 0px 20px;
+}
+.header__menu__link{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+/*title*/
+section.title{
+    margin-top: 80px;
     width: 100%;
     height: 100%;
+    background: url(../img/fone.jpg) top left;
+    background-repeat: no-repeat;
+    background-color: rgba(225, 255, 255, 0,1);
+    color: #fff;
 }
-.header{
-    display: flex;
-    padding: 10px 5%;
-    position: relative;
-    width: 100%;
-    height: 70px;
-    background: #2c3029;
-    color: white;
-}
-.header__logo,
-.header__main{
-    display: inline-block;
-}
-/*burger*/
-@media(max-width: 767px){
-    .header__burger__span{
-        position: relative;
-        width: 40px;
-        height: 35px;
-        display: block;
-        margin-left: 10px;
-    }
-    .header__burger__span:after,
-    .header__burger__span:before{
-        content: '';
-    }
-    .header__main{
-        display: none;
-    }
-    .header__burger__span span{
-        top: 21px;
-    }
-}
-.logo{
-    width: 50px;
-}
-/*nav*/
-.header__main_li{
-    float: right;
-    list-style-type: none;
-    margin-top: 15px;
-    margin-left: 5px;
-}
-.header__main_li li{
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.header__main__link{
-    font-size: 18px;
-    color: white;
-}
-.header__main__link:hover{
-    color: red;
-}
-.header__main__link:active{
-    color:grey;
-}
-
-/*wrapper*/
-.wrapper{
-    margin-top: 70px;
-}
-.block__title{
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    background-color: blue;
-    color: white;
-}
-.block__we,
-.block__portfolio,
-.block__skills,
-.block__form{
-    display: block;
-    padding: 5px 5%;
-}
-
-/*we*/
 
 /*portfolio*/
-.block__portfolio{
-    color: white;
-    background-color: #5b5b5e;
+
+/*services*/
+.services_list{
+    width: 100%;
+    padding: 10px 20px;
+}
+.services_list_block{
+    display: inline-block;
+    width: 33%;
+    top: 0;
+    left: 0;
 }
 
 /*skills*/
-.block__skills{
-    color: white;
-    background-color: #5b5b5e;
-}
 
 /*form*/
-
+form{
+    margin: 10px 35px;
+}
+form label{
+    font-size: 18px;
+    font-weight: bolder;
+}
+input{
+    width: 100%;
+    padding: 5px 20px;
+    font-size: 18px;;
+    border: 1px grey solid;
+}
+.btn_form{
+    margin-top: 5px;
+    width: 100%;
+    height: 35px;
+    border: 1px grey solid;
+    border-radius: 5px;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+input :checked{
+    width: 10px;
+    left: 0;
+}
 
 /*footer*/
 footer{
     display: block;
-    padding: 10px 5%;
-    background: #333333;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    left: 0;
     color: white;
+    background-color: #383838;
 }
-.footer__block{
+.footer_block{
     display: inline-block;
     width: 45%;
 }
-.footer__links{
-    list-style-type: none;
-}
-.footer__link{
-    font-size: 16px;
-    color: white;
-}
-.footer_link_img{
+footer img{
     width: 16px;
-    margin-right: 5px;
 }

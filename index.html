@@ -5,165 +5,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB-мастерОК</title>
-    <link rel="stylesheet" href="styles/style.css" type="text/css">
-    <link rel="icon shorcut" type="img/png" href="img/logo/logo-site.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon shorcet" href="img/logo/logo_2_white.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <!--header-->
-    <header>
-        <div class="header">
-            <div class="header__logo">
-                <a href="" class="header__logo__link">
-                    <img src="img/logo/logo_2_blue.png" alt="" class="logo">
-                </a>
-            </div>
-            <nav class="header__main">
-                <ul class="header__main_li">
-                    <li>
-                        <a href="index.html" class="header__main__link">ГЛАВНАЯ</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__main__link">ГЛАВНАЯ</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__main__link">ГЛАВНАЯ</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__main__link">ГЛАВНАЯ</a>
-                    </li>
-                    <li>
-                        <a href="#" class="header__main__link">ГЛАВНАЯ</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header__burger">
-                <div class="header__burger__span">
-                    <span></span>
-                </div>
-            </div>
-        </div>
-    </header>
     <!--wrapper-->
     <div class="wrapper">
+        <!--header-->
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                <div class="header__logo">
+                    <img src="img/logo/logo_2_blue.png" alt="" class="img__logo">
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <!--menu-->
+                <nav class="header__menu">
+                    <ul class="header__menu__list">
+                        <li>
+                            <a href="#" class="header__menu__link">Главная</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__menu__link">Портфолио</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__menu__link">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__menu__link">Навыки</a>
+                        </li>
+                        <li>
+                            <a href="#" class="header__menu__link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </header>
         <!--title-->
-        <div class="block__title">
-            <h1>WEB-мастерОК - сервис по веб-разработке</h1>
-            <h3></h3>
-        </div>
-        <!--We-->
-        <div class="block__we">
-            <h2>Специализируемся</h2>
-            <div class="block__title__text">
-                <p class="block__we__text">
-                    Наша компания специализируется в разработке сайтов, веб-приложении, базах данных и телеграмм-ботах
-                </p>
-            </div>
-            <!--изображения и лейбы-->
-            <div class="block__title__img">
-                <label>
-                    <img src="" alt="" class="img_lbl">
-                </label>
-            </div>
-        </div>
+        <section id="title" class="title">
+            <h1 class="header_h1">WEB-мастерОК - сервис по веб-разработке</h1>
+            <h2 class="header_h2">Здесь на нашем сайте вы найдете услуги по разработке веб-приложении и телеграм-ботов</h2>
+            <button class="btn__see">See</button>
+            <button class="btn__see">See</button>
+        </section>
+        <div class="container" id="content">
         <!--portfolio-->
-        <div class="block__portfolio">
-            <h2>Портфолио</h2>
-            <!--slide-->
-            <div class="block__portfolio__slide">
-                <input type="radio" class="slider__radio" id="1">
-                <input type="radio" class="slider__radio" id="2">
-                <input type="radio" class="slider__radio" id="3">
-                <input type="radio" class="slider__radio" id="4">
-                <input type="radio" class="slider__radio" id="5">
-                <button class="btn__slide">Еще показать работы</button>
+        <section class="portfolio" id="portfolio">
+            <div class="sec_portfolio">
+                <h3>Портфолио</h3>
+                <p class="portfolio_p">Портфолио наше компании</p>
+                <p class="portfolio_p"></p>
+                <div class="portfolio__slide"></div>
+                <button class="btn_portfolio">Показать еще работы</button>
             </div>
-        </div>
+        </section>
+        <!--services-->
+        <section class="services">
+            <h3>Услуги</h3>
+            <div class="services_list">
+                <div class="services_list_block">
+                    <h4 class="service_title">Frontend-</h4>
+                </div>
+                <div class="services_list_block">
+                    <h4 class="service_title">Frontend-</h4>
+                </div>
+                <div class="services_list_block">
+                    <h4 class="service_title">Frontend-</h4>
+                </div>
+            </div>
+        </section>
         <!--skills-->
-        <div class="block__skills">
-            <h2>Услуги</h2>
-            <p class="block__skills__text"></p>
-            <div class="block__skills__links">
-                <!--frontend-->
-                <div class="skl__frontend">
-                    <h3>Фронтэнд</h3>
-                </div>
-                <!--backend-->
-                <div class="skl_backend">
-                    <h3>Бекэнд</h3>
-                </div>
-                <!--disain-->
-                <div class="skl_disain">
-                    <h3>Дизайн</h3>
-                </div>
-                <!--SQL-->
-                <div class="skl_db">
-                    <h3>Базы данных</h3>
-                </div>
-                <!--Telegram bots-->
-                <div class="skl_telegram">
-                    <h3>Телеграмм-боты</h3>
-                </div>  
-                <!--hosting-->
-                <div class="skl__host">
-                    <h3>Хостинг</h3>
-                </div>
-            </div>
-        </div>
+        <section class="skills" id="skills">
+            <h3>Навыки</h3>
+        </section>
         <!--form-->
-        <div class="block__form">
-            <h2>Форма заявки</h2>
-            <form action="" class="block__form__form">
-                <label for="">
-                    Имя:
-                </label>
-                <input type="text" placeholder="Введите свое имя"><br>
-                <label for="">
-                    Телефон:
-                </label>
-                <input type="text" placeholder="Введите свой телефон"><br>
-                <label for="">
-                    Email:
-                </label>
-                <input type="text" placeholder="Введите свой email"><br>
-                <button>Отправить</button>
+        <section class="form" id="form">
+            <h3>Форма заявки</h3>
+            <form action="" class="form__contact">
+                <label for="">Имя:</label>
+                <input type="text" placeholder="Введите ваше имя">
+                <label for="">Телефон:</label>
+                <input type="text" placeholder="Введите свой телефон">
+                <label for="">Эл.почта:</label>
+                <input type="text" placeholder="Введите email">
+                <label for="">Имя:</label>
+                <input type="text" placeholder="Введите имя">
+                <input type="checkbox">
+                <p class="accept__tex">Соглашение на обработку персональных данных</p>
+                <button class="btn_form">Отправить заявку</button>
             </form>
+        </section>
         </div>
+        <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_block">
+                    <h4>Контакты</h4>
+                    <div class="footer__block__con">
+                        <a href="" class="footer__con__link">
+                            <img src="img/contact/Phone.png" alt="">
+                            Phone
+                        </a> <br>
+                        <a href="" class="footer__con__link">
+                            <img src="img/contact/mail.png" alt="">
+                            Mail
+                        </a>
+                    </div>
+                </div>
+                <div class="footer_block">
+                    <h4>Соц. сети</h4>
+                    <div class="footer__block__con">
+                        <a href="https://vk.com/public217163081" target="_blank" class="footer__con__link">
+                            <img src="img/contact/vk.png" alt="">
+                            Vkontakte
+                        </a> <br>
+                        <a href="https://t.me/WEBmasterOKBot" target="_blank" class="footer__con__link">
+                            <img src="img/contact/telegram.png" alt="">
+                            Telegram
+                        </a>
+                    </div>
+                </div>
+                <p>ООО "WEB-мастерОК" 2023 года</p>
+            </div>
+        </footer>
     </div>
-    <!--footer-->
-    <footer>
-        <div class="footer">
-            <div class="footer__block">
-                <h3>Соц.сети</h3>
-                <ul class="footer__links">
-                    <li>
-                        <a href="https://vk.com/public217163081" class="footer__link" target="_blank">
-                            <img src="img/contact/vk.png" alt="" class="footer_link_img">Vkontakte
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/WEBmasterOKBot" class="footer__link" target="_blank">
-                            <img src="img/contact/telegram.png" alt="" class="footer_link_img">Telegram
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer__block">
-                <h3>Контакты</h3>
-                <ul class="footer__links">
-                    <li>
-                        <a href="" class="footer__link">
-                            <img src="img/contact/Phone.png" alt="" class="footer_link_img">Vkontakte
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="footer__link">
-                            <img src="img/contact/mail.png" alt="" class="footer_link_img">Telegram
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <h4>ООО "WEB-мастерОК" 2023 года</h4>
-        </div>
-    </footer>
 </body>
 </html>
