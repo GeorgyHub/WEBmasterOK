@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon shorcet" href="img/logo/logo_2_white.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts/slick.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/script__burger.js"></script>
 </head>
 <body>
     <!--wrapper-->
@@ -40,6 +43,11 @@
                         <li>
                             <a href="#" class="header__menu__link">Контакты</a>
                         </li>
+                        <li>
+                            <a href="#" class="header__menu__link" onclick="">
+                                <img src="img/settings.PNG" alt="" width="18">
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 </div>
@@ -47,10 +55,12 @@
         </header>
         <!--title-->
         <section id="title" class="title">
-            <h1 class="header_h1">WEB-мастерОК - сервис по веб-разработке</h1>
-            <h2 class="header_h2">Здесь на нашем сайте вы найдете услуги по разработке веб-приложении и телеграм-ботов</h2>
-            <button class="btn__see">See</button>
-            <button class="btn__see">See</button>
+            <div class="container">
+                <h1 class="header_h1">WEB-мастерОК - сервис по веб-разработке</h1>
+                <h2 class="header_h2">Здесь на нашем сайте вы найдете услуги по разработке веб-приложении и телеграм-ботов</h2>
+                <button class="btn__see">See</button>
+                <button class="btn__see">See</button>
+            </div>
         </section>
         <div class="container" id="content">
         <!--portfolio-->
@@ -58,8 +68,13 @@
             <div class="sec_portfolio">
                 <h3>Портфолио</h3>
                 <p class="portfolio_p">Портфолио наше компании</p>
-                <p class="portfolio_p"></p>
-                <div class="portfolio__slide"></div>
+                <div class="portfolio__slide">
+                    <!--portfolio list-->
+                    <div class="portfolio__slide__img">
+                        <img src="" alt="">
+                        <span></span>
+                    </div>
+                </div>
                 <button class="btn_portfolio">Показать еще работы</button>
             </div>
         </section>
@@ -68,19 +83,46 @@
             <h3>Услуги</h3>
             <div class="services_list">
                 <div class="services_list_block">
-                    <h4 class="service_title">Frontend-</h4>
+                    <h4 class="service_title">Fullstack-разработка</h4>
+                    <hr>
+                    <div class="service_list">
+                        <ul class="service_list_ul">
+                            <li>Верстка сайта</li>
+                            <li>JavaScript/jQuery</li>
+                            <li> Адаптивная верстка</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="services_list_block">
-                    <h4 class="service_title">Frontend-</h4>
+                    <h4 class="service_title">Python-разработка</h4>
+                    <hr>
+                    <div class="service_list">
+                        <ul class="service_list_ul">
+                            <li>Верстка сайта</li>
+                            <li>JavaScript/jQuery</li>
+                            <li> Адаптивная верстка</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="services_list_block">
-                    <h4 class="service_title">Frontend-</h4>
+                    <h4 class="service_title">Разработка базы данных</h4>
+                    <hr>
+                    <div class="service_list">
+                        <ul class="service_list_ul">
+                            <li>Верстка сайта</li>
+                            <li>JavaScript/jQuery</li>
+                            <li> Адаптивная верстка</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <!--skills-->
         <section class="skills" id="skills">
             <h3>Навыки</h3>
+            <div class="skills__list">
+                <div class="skill_block"></div>
+            </div>
         </section>
         <!--form-->
         <section class="form" id="form">
@@ -89,13 +131,12 @@
                 <label for="">Имя:</label>
                 <input type="text" placeholder="Введите ваше имя">
                 <label for="">Телефон:</label>
-                <input type="text" placeholder="Введите свой телефон">
+                <input type="phone" placeholder="Введите свой телефон">
                 <label for="">Эл.почта:</label>
-                <input type="text" placeholder="Введите email">
+                <input type="email" placeholder="Введите email">
                 <label for="">Имя:</label>
-                <input type="text" placeholder="Введите имя">
-                <input type="checkbox">
-                <p class="accept__tex">Соглашение на обработку персональных данных</p>
+                <textarea type="text" placeholder=""></textarea>
+                Соглашение на обработку персональных данных<input type="checkbox" te>
                 <button class="btn_form">Отправить заявку</button>
             </form>
         </section>
