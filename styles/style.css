@@ -60,30 +60,136 @@ header{
     font-size: 18px;
     text-decoration: none;
 }
+.header__menu__link:hover{
+    text-decoration: underline;
+}
+.header__menu__link:active{
+    color: #c0c0c0;
+}
+@media screen and (max-width:768px) {
+    /*header*/
+    .header__body{
+        height: 50px;
+    }
+    .header__logo{
+        flex: 0 0 40px;
+    }
+    .header__burger{
+        display: block;
+        position: relative;
+        width:30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .header__burger span{
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+    .header__burger:before,
+    .header__burger:after{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .header__burger:before{
+        top: 0;
+    }
+    .header__burger:after{
+        bottom: 0;
+    }
+    .header__menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 90%;
+        height: 100%;
+        background-color: aqua;
+        padding: 70px 10px 20px 10px;
+    }
+    .header__list {
+        display: block;
+    }
+    .header__list li{
+        margin: 0px 0px 20px 0px;
+    }
+}
 
 /*title*/
 section.title{
     margin-top: 80px;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     background: url(../img/fone.jpg) top left;
     background-repeat: no-repeat;
-    background-color: rgba(225, 255, 255, 0,1);
     color: #fff;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+section.title h1{
+    padding-top: 18%;
+}
+.btn__see{
+    width: 15%;
+    height: 25px;
+    border: 1px white solid;
+    border-radius: 5px;
+    background-color: #ff6800;
+    color: white;
+}
+.btn__see:hover{
+    border: 1px #ff6800 solid;
+    background-color: white;
+    color: #ff6800;
 }
 
 /*portfolio*/
+.sec_portfolio{
+    padding-top: 15px;
+}
+.btn_portfolio{
+    width: 25%;
+    height: 25px;
+    background-color: green;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+}
+.btn_portfolio:hover{
+    border: 1px green solid;
+    background-color: white;
+    color: green;
+}
 
 /*services*/
+
+.service_title{
+    font-size: 18px; 
+    color: red;
+}
 .services_list{
     width: 100%;
     padding: 10px 20px;
 }
 .services_list_block{
     display: inline-block;
-    width: 33%;
+    width: 30%;
+    margin: 10px 15px;
     top: 0;
     left: 0;
+}
+.service_list_ul{
+    margin: 10px 25px;
+}
+.services_list_block hr{
+    border: 0.5px rgb(158, 158, 158) solid;
 }
 
 /*skills*/
@@ -106,16 +212,29 @@ input{
     margin-top: 5px;
     width: 100%;
     height: 35px;
+    overflow: hidden;
     border: 1px grey solid;
     border-radius: 5px;
+    background-color: #ff6800;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    color: black;
+    color: white;
+}
+.btn_form:hover{
+    background-color: white;
+    border: 1px #ff6800 solid;
+    color: #ff6800;
 }
 input :checked{
     width: 10px;
     left: 0;
+}
+textarea{
+    border: 1px grey solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px 10px;
 }
 
 /*footer*/
@@ -134,4 +253,14 @@ footer{
 }
 footer img{
     width: 16px;
+}
+.footer__con__link{
+    font-size: 17px;
+    color: white;
+}
+.footer__con__link:hover{
+    color: #c0c0c0;
+}
+.footer__con__link:active{
+    color: grey;
 }
